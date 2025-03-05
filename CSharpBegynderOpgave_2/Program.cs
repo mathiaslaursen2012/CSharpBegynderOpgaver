@@ -10,6 +10,18 @@ Console.SetCursorPosition(xPosition, yPosition);
 Console.WriteLine("X");
 
 
+Console.WriteLine("hvad er dit navn");
+
+string navn = Console.ReadLine();
+
+Console.WriteLine("hvor gammel er du ?");
+
+string alder = Console.ReadLine();
+
+Console.WriteLine("du hedder " + navn + " alder " + alder);
+
+
+
 string StrengVariabel = "TestStreng";
 Console.WriteLine(StrengVariabel);
 
@@ -20,6 +32,27 @@ Console.WriteLine(IntegerVariabel1 + IntegerVariabel2);
 
 Console.ReadLine();
 
+
+
+
+
+Console.WriteLine("==============================");
+Console.WriteLine("|" + navn +                 "|");
+Console.WriteLine("==============================");
+Console.WriteLine("|" + alder +                "|");
+Console.WriteLine("==============================");
+
+
+
+
+
+
+
+
+
+
+
+Console.ReadKey();
 
 
 
