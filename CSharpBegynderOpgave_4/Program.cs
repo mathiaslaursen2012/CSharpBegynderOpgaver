@@ -7,21 +7,50 @@
 
 //While loop der tæller til 10
 int counter = 0;
-while(counter < 10)
+while(counter <= 4)
 {
 	Console.WriteLine(counter);
 	counter++;
 }
 
 Console.ReadKey();
-Console.WriteLine("");
+//Console.WriteLine("");
 
 //Eksempel på for loop
-for(int i = 0; i < 10; i += 2)
+//for(int i = 0; i < 10; i += 2)
+//{
+//	Console.WriteLine(i);
+//}
+
+
+
+
+Random random = new Random();
+int Resultat = random.Next(0, 6);
+Console.WriteLine(Resultat);
+int antalGæt = 3;
+
+while (counter <= 3)
 {
-	Console.WriteLine(i);
+    Console.WriteLine("input a number between 0 & 5");
+    int input = Convert.ToInt32(Console.ReadLine());
+
+    if (input == Resultat)
+    {
+        Console.WriteLine("huray");
+        break;
+
+    }
+
+    else
+     {
+        Console.WriteLine("false");
+     }
 }
+
+
+
+
+
+
 Console.ReadKey();
-
-
-
